@@ -8,19 +8,44 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Homework2610</title>
-    <link rel="stylesheet" href="Homework2610.css" />
+    <link rel="stylesheet" href="Homework2610.css">
+    <link rel="charset" href="https://net-comber.com/charset.html">
 </head>
 
 <body>
     <header>
-        <section class="container"></section>
+        <section class="container">
         <h1>Password Generator</h1>
         <h2>Generate a Password</h2>
-        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password">
+            <button class="btn" id="Clipboard">
+            <i class="far fa-clipboard"></i>
+            </button>
+        </textarea>
+        <div class="settings">
+            <div class="settings">
+                <label class="length">Password Length (8 - 180 char.)</label>
+                <input type="number" id="length">
+                <br>
+                <br>
+                <label>Includes Uppercase</label>
+                <input type="checkbox" id="checkbox"/>
+                <br>
+                <label>Includes Lowercase</label>
+                <input type="checkbox" id="checkbox"/>
+                <br>
+                <label>Includes Numbers</label>
+                <input type="checkbox" id="checkbox"/>
+                <br>
+                <label>Includes Special Charachters</label>
+                <input type="checkbox" id="checkbox"/>
+                <br>
         <button id="generate">Generate Password</button>
         <button id="copy">
             Copy to Clipboard
         </button>
+        </div>
+        </div>
         </section>
     </header>
 

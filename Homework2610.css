@@ -1,3 +1,55 @@
+* {
+   box-sizing: border-box; 
+}  
+
 body {
-    background-color: aqua;
+    background-color: #3b3b98;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background-color:#23235b;
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+    margin: 50px;
+}
+#password {
+    justify-content: center;
+    font-size: 10px; 
+    width: 320px;
+}
+h1 {
+    font-size: 20px;
+}
+h2 {
+    font-size: 20px;
+}
+#length {
+    width: 40px;
+    height:20px;
+    margin-right: 5px;
+    float: right;
+}
+.settings {
+    font-size: 12px;
+}
+label {
+    margin: 5px;
+}
+
+input {
+    margin: 5px;
+    right: 5px;
+}
+#checkbox {
+    margin-right: 5px;
+    float: right;
+}
+#generate {
+    background-color: #3b3b98;
+    width: 320px;
 }
